@@ -1,6 +1,6 @@
 package com.wissen.util;
 
-import com.wissen.com.wissen.model.PipeLineMessage;
+import com.wissen.com.wissen.model.Message;
 
 import java.util.*;
 
@@ -26,7 +26,7 @@ public class PipeLineMessageFactory {
      * This method add PipeLineMessage in factoryMap
      * @param message
      */
-    private static void addMessage(PipeLineMessage message) {
+    private static void addMessage(Message message) {
 
         if (pipeLineFactoryMap.containsKey(message.getCompany())) {
             pipeLineFactoryMap.get(message.getCompany()).add(message.getSeqence());

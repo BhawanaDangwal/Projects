@@ -1,5 +1,6 @@
 package com.wissen.util;
 
+import com.wissen.com.wissen.model.Message;
 import com.wissen.com.wissen.model.PipeLineMessage;
 
 public class MessageParser {
@@ -9,9 +10,9 @@ public class MessageParser {
      * @param str
      * @return
      */
-    public static PipeLineMessage createMessage(String str)
+    public static Message createMessage(String str)
     {
-        PipeLineMessage message;
+        Message message;
         try
         {
             //P1$Infosys$2
